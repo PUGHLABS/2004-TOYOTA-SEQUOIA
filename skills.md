@@ -6,9 +6,8 @@
 - **Engine:** 4.7L V8 2UZ-FE
 - **Transmission:** 4-speed automatic A750F (4WD)
 - **Color:** Phantom Gray Pearl
-- **Owner:** Spokane, WA 99203
-- **Customer #:** 8020698 (Findlay/LHM dealer system)
-- **Purchased:** 02-22-2022, Spokane WA — $10,000 @ 100,927 mi (do not name the dealer)
+- **Owner:** Spokane, WA
+- **Purchased:** 02-22-2022, Spokane WA — $10,000 @ ~135,000 mi (do not name the dealer; exact mileage unverified — Dec 2021 = 134,317, Mar 2022 = ~139,000)
 - **Current Mileage:** 173,986 mi
 
 ## Project
