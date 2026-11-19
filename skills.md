@@ -17,7 +17,7 @@ Local HTML service dashboard (`index.html`) consolidating all service records. G
 - **Layout:** Dashboard Split View (Layout A) — left panel = recommended work, right panel = service history
 - **Theme:** Dark default (`#002451` bg, `#ff7900` accent) with light mode toggle
 - **CSS:** Separated into `styles.css` (linked from index.html)
-- **Data source:** 53 JPG images in `sequoia pdfs/` + `factory maintence schedule.pdf`
+- **Data source:** 53 JPG images in `sequoia invoice pics/` + `factory maintenance schedule.pdf`
 
 ## Primary Dealers
 - **Findlay Toyota Spokane** — 1128 W 3rd Ave, Spokane WA 99201 — (509) 455-8770 — current dealer
@@ -65,5 +65,6 @@ Priority: safety → longevity → cost
 - `styles.css` — all CSS (dark/light theme variables + layout)
 - `FSD.md` — original project brief
 - `skills.md` — this file
-- `sequoia pdfs/` — 53 JPG images of service invoices (all dated 20260412_*.jpg)
-- `factory maintence schedule.pdf` — Toyota factory maintenance schedule PDF
+- `sequoia invoice pics/` — 53 JPG images of service invoices (all dated 20260412_*.jpg)
+- `factory maintenance schedule.pdf` — Toyota factory maintenance schedule PDF
+- `glam/` — Glam Shots tab assets (web photos `full/`, `thumb/`, `glam-video.mp4`); originals in `SEQUOIA GLAM SHOTS/` are git-ignored
