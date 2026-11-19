@@ -18,39 +18,43 @@
         <span class="subtitle">4X4 Limited &nbsp;|&nbsp; 4.7L V8 2UZ-FE &nbsp;|&nbsp; Spokane WA</span>
       </div>
       <div class="header-controls">
+        <nav class="tabs" role="tablist">
+          <button class="tab active" role="tab" aria-selected="true" data-view="dashboardView">&#128295; Service Dashboard</button>
+          <button class="tab" role="tab" aria-selected="false" data-view="glamView">&#128248; Glam Shots</button>
+        </nav>
         <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">&#9728; Light Mode</button>
       </div>
     </div>
     <div class="chips">
       <span class="chip"><strong>VIN:</strong> 5TDBT48A14S230766</span>
-      <span class="chip accent"><strong>Mileage:</strong> 170,181 mi</span>
+      <span class="chip accent"><strong>Mileage:</strong> 173,986 mi</span>
       <span class="chip"><strong>Color:</strong> Phantom Gray Pearl</span>
       <span class="chip"><strong>Engine:</strong> 4.7L V8 2UZ-FE</span>
       <span class="chip"><strong>Purchased:</strong> 02.22.2022 @ 100,927 mi &mdash; $10,000</span>
-      <span class="chip"><strong>Last Service:</strong> Feb 27, 2026 &mdash; Inv #430781</span>
-      <span class="chip warn"><strong>Next Due:</strong> ~174,000 mi (Oil / Rotation / Brakes)</span>
+      <span class="chip"><strong>Last Service:</strong> ~171,100 mi &mdash; DIY (brakes, axles, diff)</span>
+      <span class="chip warn"><strong>Next Due:</strong> ~174,000 mi (Oil / Rotation) &mdash; due now</span>
     </div>
   </header>
 
   <!-- ══════════════ DASHBOARD ══════════════ -->
-  <div class="dashboard">
+  <div class="dashboard" id="dashboardView">
 
     <!-- ════ LEFT PANEL — RECOMMENDED WORK ════ -->
     <div class="panel panel-left">
 
       <!-- Cost Summary -->
       <div class="cost-summary">
-        <div class="cs-row"><span>Safety items</span><span>~$2,479</span></div>
-        <div class="cs-row"><span>Longevity items</span><span>~$3,947&ndash;4,012</span></div>
+        <div class="cs-row"><span>Safety items</span><span>~$1,293&ndash;1,303</span></div>
+        <div class="cs-row"><span>Longevity items</span><span>~$3,289</span></div>
         <div class="cs-row"><span>Factory overdue / no record</span><span>~$580&ndash;730</span></div>
         <div class="cs-row"><span>Routine maintenance</span><span>~$343</span></div>
-        <div class="cs-row"><span>Total Estimated Remaining</span><span>~$7,349&ndash;7,564</span></div>
+        <div class="cs-row"><span>Total Estimated Remaining</span><span>~$5,505&ndash;5,665</span></div>
       </div>
 
       <!-- SAFETY -->
       <div class="section-label">
         <span>&#128308; Safety &mdash; Address First</span>
-        <span class="total-badge">~$2,479</span>
+        <span class="total-badge">~$1,293&ndash;1,303</span>
       </div>
 
       <div class="work-item safety">
@@ -58,7 +62,7 @@
           <span class="wi-name"><span class="wi-badge badge-safety">Safety</span>Brake Fluid Flush</span>
           <span class="wi-cost">~$200&ndash;210</span>
         </div>
-        <div class="wi-detail">Last done Oct 2022 @ 144,500 mi &mdash; now 170,181 mi (25,681 mi / 3.5 yrs ago).
+        <div class="wi-detail">Last done Oct 2022 @ 144,500 mi &mdash; now 173,986 mi (29,486 mi / ~4 yrs ago).
           Degraded fluid lowers boiling point and reduces stopping ability. Quoted Feb 2026 @ $199.95.</div>
       </div>
 
@@ -73,15 +77,6 @@
 
       <div class="work-item safety">
         <div class="wi-header">
-          <span class="wi-name"><span class="wi-badge badge-safety">Safety</span>Power Steering Return Line</span>
-          <span class="wi-cost">$1,386.05</span>
-        </div>
-        <div class="wi-detail">Quoted Feb 2026 (Inv #430781). Return line replacement &mdash; includes hose + labor. Do
-          together with pressure hose for one labor pull.</div>
-      </div>
-
-      <div class="work-item safety">
-        <div class="wi-header">
           <span class="wi-name"><span class="wi-badge badge-safety">Safety</span>Rear Struts (Pair)</span>
           <span class="wi-cost">$883</span>
         </div>
@@ -92,7 +87,7 @@
       <!-- LONGEVITY -->
       <div class="section-label" style="margin-top:16px;">
         <span>&#128993; Longevity &mdash; Prevent Bigger Failures</span>
-        <span class="total-badge">~$3,947&ndash;4,012</span>
+        <span class="total-badge">~$3,289</span>
       </div>
 
       <div class="work-item longevity">
@@ -114,27 +109,6 @@
           removal. Separate job from camshaft seals. Address before oil loss accelerates engine wear.</div>
       </div>
 
-      <div class="work-item longevity">
-        <div class="wi-header">
-          <span class="wi-name"><span class="wi-badge badge-longevity">Longevity</span>Front Differential Axle
-            Seals</span>
-          <span class="wi-cost">$452.70&ndash;516.72</span>
-        </div>
-        <div class="wi-detail">Quoted May 2025 ($452.70, Inv #407123) and Feb 2026 ($516.72 pre-work order). Leaking
-          &mdash; separate from CV axles (both axles replaced Oct 2024). Diff fluid loss damages bearings and gears.
-        </div>
-      </div>
-
-      <div class="work-item longevity">
-        <div class="wi-header">
-          <span class="wi-name"><span class="wi-badge badge-longevity">Parts On Order</span>Front Differential Needle Bearing</span>
-          <span class="wi-cost">$206.41</span>
-        </div>
-        <div class="wi-detail">Toyota 7.5&quot; clamshell bushing. Parts from East Coast Gear Supply ($172.00 + $17.19
-          shipping + $17.22 tax). DIY replacement.
-        </div>
-      </div>
-
       <!-- FACTORY OVERDUE -->
       <div class="section-label" style="margin-top:16px;">
         <span>&#128995; Factory Schedule &mdash; Overdue / No Record</span>
@@ -143,20 +117,20 @@
 
       <div class="work-item overdue">
         <div class="wi-header">
-          <span class="wi-name"><span class="wi-badge badge-overdue">19k Overdue</span>Spark Plugs (8 plugs &mdash;
+          <span class="wi-name"><span class="wi-badge badge-overdue">24k Overdue</span>Spark Plugs (8 plugs &mdash;
             V8)</span>
           <span class="wi-cost">~$400&ndash;500</span>
         </div>
-        <div class="wi-detail">Factory due @ 150,000 mi. Now 170,181 &mdash; 20k overdue. Sequoia explicitly listed in
+        <div class="wi-detail">Factory due @ 150,000 mi. Now 173,986 &mdash; 24k overdue. Sequoia explicitly listed in
           Toyota factory schedule. Iridium plugs recommended for V8.</div>
       </div>
 
       <div class="work-item overdue">
         <div class="wi-header">
-          <span class="wi-name"><span class="wi-badge badge-overdue">19k Overdue</span>Engine Coolant Replacement</span>
+          <span class="wi-name"><span class="wi-badge badge-overdue">24k Overdue</span>Engine Coolant Replacement</span>
           <span class="wi-cost">~$150&ndash;200</span>
         </div>
-        <div class="wi-detail">Factory: 100k initial then every 50k. Due again @ 150k &mdash; now 169k. Last coolant
+        <div class="wi-detail">Factory: 100k initial then every 50k. Due again @ 150k &mdash; now 173,986 (24k overdue). Last coolant
           flush was Oct 2022 @ 144,500 mi (not at 150k). Degraded coolant corrodes water pump and cooling system.</div>
       </div>
 
@@ -180,7 +154,8 @@
           <span class="wi-name"><span class="wi-badge badge-maintenance">Maint</span>Oil Change + Tire Rotation</span>
           <span class="wi-cost">~$210</span>
         </div>
-        <div class="wi-detail">Due ~174,000 mi (5k interval from last service Feb 27, 2026 @ 169,255). Rotation
+        <div class="wi-detail">Due now &mdash; ~174,000 mi (5k interval from last oil change Feb 27, 2026 @ 169,255;
+          now 173,986). Rotation
           maintains even wear on Bridgestone Alenza tires (installed Nov 2024).</div>
       </div>
 
@@ -198,7 +173,7 @@
           <span class="wi-name"><span class="wi-badge badge-maintenance">Maint</span>Drive Belt Inspection</span>
           <span class="wi-cost">Free w/ service</span>
         </div>
-        <div class="wi-detail">Due @ 180k factory interval (~10,745 mi away). Inspect serpentine and AC belts for
+        <div class="wi-detail">Due @ 180k factory interval (~6,014 mi away). Inspect serpentine and AC belts for
           cracking or glazing.</div>
       </div>
 
@@ -211,7 +186,7 @@
         <div class="ri-icon">&#128308;</div>
         <div class="ri-body">
           <div class="ri-name">Spark Plugs</div>
-          <div class="ri-detail">Due: 150,000 mi &nbsp;|&nbsp; Now: 170,181 mi &nbsp;|&nbsp; 20k overdue</div>
+          <div class="ri-detail">Due: 150,000 mi &nbsp;|&nbsp; Now: 173,986 mi &nbsp;|&nbsp; 24k overdue</div>
         </div>
         <span class="ri-status status-overdue">Overdue</span>
       </div>
@@ -220,7 +195,7 @@
         <div class="ri-icon">&#128308;</div>
         <div class="ri-body">
           <div class="ri-name">Engine Coolant</div>
-          <div class="ri-detail">Due: 150,000 mi (50k cycle) &nbsp;|&nbsp; Now: 170,181 mi &nbsp;|&nbsp; 20k overdue
+          <div class="ri-detail">Due: 150,000 mi (50k cycle) &nbsp;|&nbsp; Now: 173,986 mi &nbsp;|&nbsp; 24k overdue
           </div>
         </div>
         <span class="ri-status status-overdue">Overdue</span>
@@ -239,25 +214,16 @@
         <div class="ri-icon">&#128993;</div>
         <div class="ri-body">
           <div class="ri-name">Oil Change + Rotation</div>
-          <div class="ri-detail">Due: ~174,000 mi &nbsp;|&nbsp; Last: 169,255 mi (Feb 27, 2026)</div>
+          <div class="ri-detail">Due: ~174,000 mi &nbsp;|&nbsp; Last: 169,255 mi (Feb 27, 2026) &nbsp;|&nbsp; Now: 173,986 mi</div>
         </div>
-        <span class="ri-status status-due">Due Soon</span>
-      </div>
-
-      <div class="reminder-item">
-        <div class="ri-icon">&#128993;</div>
-        <div class="ri-body">
-          <div class="ri-name">Brake System Inspection</div>
-          <div class="ri-detail">Due: ~174,000 mi &nbsp;|&nbsp; Front brakes done Oct 2024 (Inv #392375)</div>
-        </div>
-        <span class="ri-status status-due">Due Soon</span>
+        <span class="ri-status status-due">Due Now</span>
       </div>
 
       <div class="reminder-item">
         <div class="ri-icon">&#128994;</div>
         <div class="ri-body">
           <div class="ri-name">Drive Belts + Exhaust Inspect</div>
-          <div class="ri-detail">Due: 180,000 mi &nbsp;|&nbsp; ~10,745 mi away</div>
+          <div class="ri-detail">Due: 180,000 mi &nbsp;|&nbsp; ~6,014 mi away</div>
         </div>
         <span class="ri-status status-upcoming">Upcoming</span>
       </div>
@@ -266,7 +232,7 @@
         <div class="ri-icon">&#128994;</div>
         <div class="ri-body">
           <div class="ri-name">Ball Joints + Steering Linkage</div>
-          <div class="ri-detail">Due: 180,000 mi inspect &nbsp;|&nbsp; ~10,745 mi away</div>
+          <div class="ri-detail">Due: 180,000 mi inspect &nbsp;|&nbsp; ~6,014 mi away</div>
         </div>
         <span class="ri-status status-upcoming">Upcoming</span>
       </div>
@@ -312,7 +278,47 @@
         <div class="ri-icon">&#9989;</div>
         <div class="ri-body">
           <div class="ri-name">CV Axles (Both Front)</div>
-          <div class="ri-detail">Replaced: Oct 22, 2024 @ 161,332 mi (Inv #392375, Findlay Toyota)</div>
+          <div class="ri-detail">Replaced again: ~171,100 mi (DIY) &mdash; previously Oct 22, 2024 @ 161,332 mi (Inv
+            #392375, Findlay Toyota)</div>
+        </div>
+        <span class="ri-status status-ok">Done</span>
+      </div>
+
+      <div class="reminder-item">
+        <div class="ri-icon">&#9989;</div>
+        <div class="ri-body">
+          <div class="ri-name">Front Differential Axle Seals</div>
+          <div class="ri-detail">Replaced: ~171,100 mi (DIY, with new front axles) &mdash; previously quoted
+            $452.70&ndash;516.72</div>
+        </div>
+        <span class="ri-status status-ok">Done</span>
+      </div>
+
+      <div class="reminder-item">
+        <div class="ri-icon">&#9989;</div>
+        <div class="ri-body">
+          <div class="ri-name">Front Differential Needle Bearing</div>
+          <div class="ri-detail">Replaced: ~171,100 mi (DIY) &mdash; Toyota 7.5&quot; clamshell bushing, East Coast
+            Gear Supply, $206.41</div>
+        </div>
+        <span class="ri-status status-ok">Done</span>
+      </div>
+
+      <div class="reminder-item">
+        <div class="ri-icon">&#9989;</div>
+        <div class="ri-body">
+          <div class="ri-name">Front Brakes (Rotors + Pads)</div>
+          <div class="ri-detail">Replaced: ~171,100 mi (DIY) &mdash; new front rotors + PowerStop front pads</div>
+        </div>
+        <span class="ri-status status-ok">Done</span>
+      </div>
+
+      <div class="reminder-item">
+        <div class="ri-icon">&#9989;</div>
+        <div class="ri-body">
+          <div class="ri-name">Power Steering Return Line</div>
+          <div class="ri-detail">Resolved: ~171,100 mi (DIY) &mdash; loose hose clamp tightened, no replacement needed
+            (dealer had quoted $1,386.05)</div>
         </div>
         <span class="ri-status status-ok">Done</span>
       </div>
@@ -352,7 +358,7 @@
       <div class="totals-bar">
         <div class="tb-item">
           <div class="tb-label">Total Documented Service</div>
-          <div class="tb-value">~$9,874</div>
+          <div class="tb-value">~$10,363</div>
         </div>
         <div class="tb-item">
           <div class="tb-label">Purchase Price</div>
@@ -360,7 +366,7 @@
         </div>
         <div class="tb-item">
           <div class="tb-label">Estimated Remaining</div>
-          <div class="tb-value">~$7,143</div>
+          <div class="tb-value">~$5,505&ndash;5,665</div>
         </div>
         <div class="tb-item">
           <div class="tb-label">Purchased @ Mileage</div>
@@ -370,11 +376,47 @@
 
       <div class="section-label">
         <span>Service History &mdash; Newest to Oldest</span>
-        <span class="total-badge">18 entries</span>
+        <span class="total-badge">19 entries</span>
       </div>
 
       <!-- 2026 -->
       <div class="year-divider">2026</div>
+
+      <div class="service-entry">
+        <div class="se-header">
+          <div class="se-meta">
+            <div class="se-date">~2026 &mdash; DIY</div>
+            <div class="se-shop">Owner-performed</div>
+            <div class="se-invoice">Parts receipts (no shop invoice)</div>
+          </div>
+          <div>
+            <div class="se-total">$489.48</div>
+            <div class="se-mileage">~171,100 mi</div>
+          </div>
+        </div>
+        <div class="se-items">
+          <div class="se-line"><span class="line-desc">Front CV Axles (both sides) &mdash; replaced</span><span
+              class="line-cost">DIY</span></div>
+          <div class="se-line"><span class="line-desc">Front Differential Axle Seals &mdash; replaced</span><span
+              class="line-cost">DIY</span></div>
+          <div class="se-line"><span class="line-desc">Front Diff Needle Bearing (Toyota 7.5&quot; clamshell bushing)
+              &mdash; East Coast Gear Supply</span><span class="line-cost">$206.41</span></div>
+          <div class="se-line"><span class="line-desc">Front Brake Rotors (2 &times; $57.92)</span><span
+              class="line-cost">$115.84</span></div>
+          <div class="se-line"><span class="line-desc">PowerStop Front Brake Pads (pair)</span><span
+              class="line-cost">$57.43</span></div>
+          <div class="se-line"><span class="line-desc">Weatherstrip (first set returned as defective)</span><span
+              class="line-cost">$49.99</span></div>
+          <div class="se-line"><span class="line-desc">Front Turn Signal Lights (pair)</span><span
+              class="line-cost">$50.99</span></div>
+          <div class="se-line"><span class="line-desc">Fuel Door Spring</span><span class="line-cost">$8.82</span>
+          </div>
+          <div class="se-line"><span class="line-desc">PS Return Line &mdash; loose hose clamp tightened (no replacement
+              needed)</span><span class="line-cost">$0</span></div>
+          <div class="se-line"><span class="line-desc">Total Parts (axles + seals cost not recorded)</span><span
+              class="line-cost bold">$489.48</span></div>
+        </div>
+      </div>
 
       <div class="service-entry">
         <div class="se-header">
@@ -817,6 +859,86 @@
     </div><!-- /panel-right -->
   </div><!-- /dashboard -->
 
+  <!-- ══════════════ GLAM SHOTS ══════════════ -->
+  <section id="glamView" class="glam" hidden>
+    <div class="glam-head">
+      <h2>Glam Shots</h2>
+      <span class="glam-sub">May 19, 2026 &nbsp;|&nbsp; 60 photos + video &nbsp;|&nbsp; click any photo to enlarge</span>
+    </div>
+    <video class="glam-video" controls preload="none" playsinline data-src="glam/glam-video.mp4"></video>
+    <div class="glam-grid" id="glamGrid">
+      <button class="glam-tile" data-full="glam/full/20260519_134919.jpg" aria-label="Open photo 1"><img data-src="glam/thumb/20260519_134919.jpg" alt="2004 Sequoia glam shot 1" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_134923.jpg" aria-label="Open photo 2"><img data-src="glam/thumb/20260519_134923.jpg" alt="2004 Sequoia glam shot 2" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_134928.jpg" aria-label="Open photo 3"><img data-src="glam/thumb/20260519_134928.jpg" alt="2004 Sequoia glam shot 3" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_134936.jpg" aria-label="Open photo 4"><img data-src="glam/thumb/20260519_134936.jpg" alt="2004 Sequoia glam shot 4" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_134945.jpg" aria-label="Open photo 5"><img data-src="glam/thumb/20260519_134945.jpg" alt="2004 Sequoia glam shot 5" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_134952.jpg" aria-label="Open photo 6"><img data-src="glam/thumb/20260519_134952.jpg" alt="2004 Sequoia glam shot 6" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_134955.jpg" aria-label="Open photo 7"><img data-src="glam/thumb/20260519_134955.jpg" alt="2004 Sequoia glam shot 7" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135006.jpg" aria-label="Open photo 8"><img data-src="glam/thumb/20260519_135006.jpg" alt="2004 Sequoia glam shot 8" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135014.jpg" aria-label="Open photo 9"><img data-src="glam/thumb/20260519_135014.jpg" alt="2004 Sequoia glam shot 9" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135020.jpg" aria-label="Open photo 10"><img data-src="glam/thumb/20260519_135020.jpg" alt="2004 Sequoia glam shot 10" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135025.jpg" aria-label="Open photo 11"><img data-src="glam/thumb/20260519_135025.jpg" alt="2004 Sequoia glam shot 11" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135100.jpg" aria-label="Open photo 12"><img data-src="glam/thumb/20260519_135100.jpg" alt="2004 Sequoia glam shot 12" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135106.jpg" aria-label="Open photo 13"><img data-src="glam/thumb/20260519_135106.jpg" alt="2004 Sequoia glam shot 13" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135113.jpg" aria-label="Open photo 14"><img data-src="glam/thumb/20260519_135113.jpg" alt="2004 Sequoia glam shot 14" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135121.jpg" aria-label="Open photo 15"><img data-src="glam/thumb/20260519_135121.jpg" alt="2004 Sequoia glam shot 15" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135128.jpg" aria-label="Open photo 16"><img data-src="glam/thumb/20260519_135128.jpg" alt="2004 Sequoia glam shot 16" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135143.jpg" aria-label="Open photo 17"><img data-src="glam/thumb/20260519_135143.jpg" alt="2004 Sequoia glam shot 17" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135159.jpg" aria-label="Open photo 18"><img data-src="glam/thumb/20260519_135159.jpg" alt="2004 Sequoia glam shot 18" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135205.jpg" aria-label="Open photo 19"><img data-src="glam/thumb/20260519_135205.jpg" alt="2004 Sequoia glam shot 19" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135211.jpg" aria-label="Open photo 20"><img data-src="glam/thumb/20260519_135211.jpg" alt="2004 Sequoia glam shot 20" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135223.jpg" aria-label="Open photo 21"><img data-src="glam/thumb/20260519_135223.jpg" alt="2004 Sequoia glam shot 21" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135227.jpg" aria-label="Open photo 22"><img data-src="glam/thumb/20260519_135227.jpg" alt="2004 Sequoia glam shot 22" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135236.jpg" aria-label="Open photo 23"><img data-src="glam/thumb/20260519_135236.jpg" alt="2004 Sequoia glam shot 23" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135246.jpg" aria-label="Open photo 24"><img data-src="glam/thumb/20260519_135246.jpg" alt="2004 Sequoia glam shot 24" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135306.jpg" aria-label="Open photo 25"><img data-src="glam/thumb/20260519_135306.jpg" alt="2004 Sequoia glam shot 25" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135356.jpg" aria-label="Open photo 26"><img data-src="glam/thumb/20260519_135356.jpg" alt="2004 Sequoia glam shot 26" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135400.jpg" aria-label="Open photo 27"><img data-src="glam/thumb/20260519_135400.jpg" alt="2004 Sequoia glam shot 27" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135406.jpg" aria-label="Open photo 28"><img data-src="glam/thumb/20260519_135406.jpg" alt="2004 Sequoia glam shot 28" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135411.jpg" aria-label="Open photo 29"><img data-src="glam/thumb/20260519_135411.jpg" alt="2004 Sequoia glam shot 29" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135417.jpg" aria-label="Open photo 30"><img data-src="glam/thumb/20260519_135417.jpg" alt="2004 Sequoia glam shot 30" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135422.jpg" aria-label="Open photo 31"><img data-src="glam/thumb/20260519_135422.jpg" alt="2004 Sequoia glam shot 31" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135430.jpg" aria-label="Open photo 32"><img data-src="glam/thumb/20260519_135430.jpg" alt="2004 Sequoia glam shot 32" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135439.jpg" aria-label="Open photo 33"><img data-src="glam/thumb/20260519_135439.jpg" alt="2004 Sequoia glam shot 33" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135506.jpg" aria-label="Open photo 34"><img data-src="glam/thumb/20260519_135506.jpg" alt="2004 Sequoia glam shot 34" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135518.jpg" aria-label="Open photo 35"><img data-src="glam/thumb/20260519_135518.jpg" alt="2004 Sequoia glam shot 35" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135538.jpg" aria-label="Open photo 36"><img data-src="glam/thumb/20260519_135538.jpg" alt="2004 Sequoia glam shot 36" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135553.jpg" aria-label="Open photo 37"><img data-src="glam/thumb/20260519_135553.jpg" alt="2004 Sequoia glam shot 37" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135558.jpg" aria-label="Open photo 38"><img data-src="glam/thumb/20260519_135558.jpg" alt="2004 Sequoia glam shot 38" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135619.jpg" aria-label="Open photo 39"><img data-src="glam/thumb/20260519_135619.jpg" alt="2004 Sequoia glam shot 39" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135645.jpg" aria-label="Open photo 40"><img data-src="glam/thumb/20260519_135645.jpg" alt="2004 Sequoia glam shot 40" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135652.jpg" aria-label="Open photo 41"><img data-src="glam/thumb/20260519_135652.jpg" alt="2004 Sequoia glam shot 41" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135656.jpg" aria-label="Open photo 42"><img data-src="glam/thumb/20260519_135656.jpg" alt="2004 Sequoia glam shot 42" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135700.jpg" aria-label="Open photo 43"><img data-src="glam/thumb/20260519_135700.jpg" alt="2004 Sequoia glam shot 43" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135706.jpg" aria-label="Open photo 44"><img data-src="glam/thumb/20260519_135706.jpg" alt="2004 Sequoia glam shot 44" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135710.jpg" aria-label="Open photo 45"><img data-src="glam/thumb/20260519_135710.jpg" alt="2004 Sequoia glam shot 45" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135716.jpg" aria-label="Open photo 46"><img data-src="glam/thumb/20260519_135716.jpg" alt="2004 Sequoia glam shot 46" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135720.jpg" aria-label="Open photo 47"><img data-src="glam/thumb/20260519_135720.jpg" alt="2004 Sequoia glam shot 47" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135727.jpg" aria-label="Open photo 48"><img data-src="glam/thumb/20260519_135727.jpg" alt="2004 Sequoia glam shot 48" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135738.jpg" aria-label="Open photo 49"><img data-src="glam/thumb/20260519_135738.jpg" alt="2004 Sequoia glam shot 49" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135806.jpg" aria-label="Open photo 50"><img data-src="glam/thumb/20260519_135806.jpg" alt="2004 Sequoia glam shot 50" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135824.jpg" aria-label="Open photo 51"><img data-src="glam/thumb/20260519_135824.jpg" alt="2004 Sequoia glam shot 51" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135839.jpg" aria-label="Open photo 52"><img data-src="glam/thumb/20260519_135839.jpg" alt="2004 Sequoia glam shot 52" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135845.jpg" aria-label="Open photo 53"><img data-src="glam/thumb/20260519_135845.jpg" alt="2004 Sequoia glam shot 53" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135914.jpg" aria-label="Open photo 54"><img data-src="glam/thumb/20260519_135914.jpg" alt="2004 Sequoia glam shot 54" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135921.jpg" aria-label="Open photo 55"><img data-src="glam/thumb/20260519_135921.jpg" alt="2004 Sequoia glam shot 55" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135944.jpg" aria-label="Open photo 56"><img data-src="glam/thumb/20260519_135944.jpg" alt="2004 Sequoia glam shot 56" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_135955.jpg" aria-label="Open photo 57"><img data-src="glam/thumb/20260519_135955.jpg" alt="2004 Sequoia glam shot 57" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_140008.jpg" aria-label="Open photo 58"><img data-src="glam/thumb/20260519_140008.jpg" alt="2004 Sequoia glam shot 58" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_140851.jpg" aria-label="Open photo 59"><img data-src="glam/thumb/20260519_140851.jpg" alt="2004 Sequoia glam shot 59" loading="lazy" decoding="async"></button>
+      <button class="glam-tile" data-full="glam/full/20260519_140923.jpg" aria-label="Open photo 60"><img data-src="glam/thumb/20260519_140923.jpg" alt="2004 Sequoia glam shot 60" loading="lazy" decoding="async"></button>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <img id="lbImg" alt="">
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+    <div class="lb-count" id="lbCount"></div>
+  </div>
+
   <script>
     function toggleTheme() {
       const html = document.documentElement;
@@ -829,6 +951,55 @@
         btn.textContent = '\u2600 Light Mode';
       }
     }
+
+    // \u2500\u2500 Tabs \u2500\u2500
+    const tabs = document.querySelectorAll('.tab');
+    let glamLoaded = false;
+    function showView(id) {
+      tabs.forEach(t => {
+        const on = t.dataset.view === id;
+        t.classList.toggle('active', on);
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.dataset.view).hidden = !on;
+      });
+      if (id === 'glamView' && !glamLoaded) {
+        glamLoaded = true;
+        document.querySelectorAll('#glamView [data-src]').forEach(el => { el.src = el.dataset.src; });
+      }
+    }
+    tabs.forEach(t => t.addEventListener('click', () => {
+      showView(t.dataset.view);
+      history.replaceState(null, '', t.dataset.view === 'glamView' ? '#glam' : location.pathname);
+      window.scrollTo(0, 0);
+    }));
+    if (location.hash === '#glam') showView('glamView');
+
+    // \u2500\u2500 Lightbox \u2500\u2500
+    const tiles = [...document.querySelectorAll('.glam-tile')];
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbCount = document.getElementById('lbCount');
+    let cur = 0;
+    function openLb(i) {
+      cur = (i + tiles.length) % tiles.length;
+      lbImg.src = tiles[cur].dataset.full;
+      lbImg.alt = tiles[cur].querySelector('img').alt;
+      lbCount.textContent = (cur + 1) + ' / ' + tiles.length;
+      lb.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLb() { lb.hidden = true; lbImg.removeAttribute('src'); document.body.style.overflow = ''; }
+    tiles.forEach((t, i) => t.addEventListener('click', () => openLb(i)));
+    document.getElementById('lbPrev').addEventListener('click', e => { e.stopPropagation(); openLb(cur - 1); });
+    document.getElementById('lbNext').addEventListener('click', e => { e.stopPropagation(); openLb(cur + 1); });
+    document.getElementById('lbClose').addEventListener('click', closeLb);
+    lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+    document.addEventListener('keydown', e => {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') closeLb();
+      else if (e.key === 'ArrowLeft') openLb(cur - 1);
+      else if (e.key === 'ArrowRight') openLb(cur + 1);
+    });
   </script>
 </body>
 
