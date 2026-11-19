@@ -9,7 +9,7 @@
 - **Owner:** Spokane, WA 99203
 - **Customer #:** 8020698 (Findlay/LHM dealer system)
 - **Purchased:** 02-22-2022, Spokane WA — $10,000 @ 100,927 mi (do not name the dealer)
-- **Current Mileage:** 170,181 mi
+- **Current Mileage:** 173,986 mi
 
 ## Project
 Local HTML service dashboard (`index.html`) consolidating all service records. Goal is 100% verified data from 53 scanned invoice images.
@@ -28,7 +28,12 @@ Local HTML service dashboard (`index.html`) consolidating all service records. G
 - Camshaft seals and rear crankshaft seal are **SEPARATE jobs** (different labor, different access)
 - Costco tires total = $1,086 (confirmed)
 - Steering rack **REPLACED** Oct 2024 — PS hoses still original and separate
-- CV axles **REPLACED** Oct 2024 — front diff axle **SEALS** are a separate outstanding item
+- CV axles **REPLACED** Oct 2024, then **REPLACED AGAIN** ~171,100 mi (DIY, both front)
+- Front diff axle seals **DONE** ~171,100 mi (DIY, with the new axles)
+- Front diff needle bearing **DONE** ~171,100 mi (DIY — East Coast Gear Supply, $206.41)
+- PS return line **DONE** ~171,100 mi — was just a loose hose clamp, no replacement (dealer had quoted $1,386.05)
+- DIY batch @ ~171,100 mi: front rotors 2 × $57.92, PowerStop front pads $57.43/pair, weatherstrip $49.99 (first set returned defective), front turn signal lights $50.99/pair, fuel door spring $8.82
+- Wheel bearings were purchased but **RETURNED** — never list them as installed
 - Front struts replaced **Oct 2024** (NOT March 2022)
 - Timing belt done **March 2022 @ 139,367 mi** (Larry H. Miller)
 - Invoice #409384 (Jun 2025) = fuel sending unit replacement, NOT transmission/diff service
@@ -42,20 +47,18 @@ Local HTML service dashboard (`index.html`) consolidating all service records. G
 - **90k:** Replace timing belt + spark plugs
 - **100k:** Replace engine coolant (then every 50k)
 
-## Outstanding Recommended Work (as of Feb 2026 @ 170,181 mi)
+## Outstanding Recommended Work (as of Nov 2026 @ 173,986 mi)
 Priority: safety → longevity → cost
 
 1. Brake Fluid Flush — ~$200 (last done Oct 2022 @ ~144,500 mi)
 2. PS Pressure Hose — $209.95 (Feb 2026, noted "clean and recheck")
-3. PS Return Line — $1,386.05 (Feb 2026)
-4. Rear Struts — $883 (Feb 2026 pre-work order)
-5. Camshaft Seals (both banks, labor only) — $1,480 (Feb 2026)
-6. Rear Crankshaft Seal — $1,808.63 (Feb 2026 pre-work order)
-7. Front Differential Axle Seals — $452.70–$516.72 (May 2025 and Feb 2026)
-8. Spark Plugs (8 plugs, V8) — ~$400–500 (20k overdue)
-9. Engine Coolant — ~$150–200 (20k overdue)
-10. Front Differential Needle Bearing — $206.41 (parts on order from East Coast Gear Supply, Toyota 7.5" clamshell bushing, DIY)
-11. Propeller Shaft Lubrication — ~$30 (no records ever found)
+3. Rear Struts — $883 (Feb 2026 pre-work order)
+4. Camshaft Seals (both banks, labor only) — $1,480 (Feb 2026)
+5. Rear Crankshaft Seal — $1,808.63 (Feb 2026 pre-work order)
+6. Spark Plugs (8 plugs, V8) — ~$400–500 (24k overdue)
+7. Engine Coolant — ~$150–200 (24k overdue)
+8. Propeller Shaft Lubrication — ~$30 (no records ever found)
+9. Oil Change + Rotation — ~$210 (due now, ~174,000 mi)
 
 ## Files
 - `index.html` — main dashboard (links to styles.css)

@@ -15,7 +15,7 @@ A self-contained local web dashboard that consolidates the complete service hist
 | **Transmission** | 4-speed automatic A750F (4WD) |
 | **Color** | Phantom Gray Pearl |
 | **VIN** | 5TDBT48A14S230766 |
-| **Current Mileage** | 170,181 mi |
+| **Current Mileage** | 173,986 mi |
 
 ---
 
@@ -25,7 +25,7 @@ A self-contained local web dashboard that consolidates the complete service hist
 - **Dark / Light mode toggle** — dark default (`#002451` navy + `#ff7900` orange accent)
 - **Priority-coded recommended work** — Safety (red), Longevity (yellow), Factory Overdue (purple), Maintenance (green)
 - **Factory maintenance tracker** — every interval cross-referenced against completed services, with Overdue / Due Soon / Upcoming / Done status badges
-- **Complete service history** — 18 verified entries from 2010 purchase through Feb 2026, with exact mileage, invoice numbers, shop names, line items, and totals
+- **Complete service history** — 19 entries from 2010 purchase through the ~171,100 mi DIY work in 2026, with exact mileage, invoice numbers, shop names, line items, and totals
 - **Quoted remaining work** — all outstanding items include actual dealer quotes with source invoice references
 - **No dependencies** — single `index.html` + `styles.css`, no frameworks, no build step, works offline
 
@@ -44,17 +44,17 @@ A self-contained local web dashboard that consolidates the complete service hist
 | Category | Amount |
 |---|---|
 | Purchase price | $10,000 |
-| Total documented service spend | ~$9,874 |
-| Estimated remaining work | ~$7,349–7,564 |
+| Total documented service spend | ~$10,363 |
+| Estimated remaining work | ~$5,505–5,665 |
 
 ### Top Outstanding Items
 1. Brake Fluid Flush — ~$200
-2. Power Steering Hoses (pressure + return) — ~$1,596
+2. Power Steering Pressure Hose — $209.95
 3. Rear Struts — $883
 4. Camshaft Seals — $1,480
 5. Rear Crankshaft Seal — $1,808
-6. Spark Plugs — ~$400–500 *(20k overdue)*
-7. Engine Coolant — ~$150–200 *(20k overdue)*
+6. Spark Plugs — ~$400–500 *(24k overdue)*
+7. Engine Coolant — ~$150–200 *(24k overdue)*
 
 ---
 
